@@ -13,12 +13,14 @@ if __name__ == '__main__':
     b.sort()
     print(b)
     
+    #set second as first element of the Age
     second = b[0]
     for i in range(1,len(b)):        
         if b[i] > second:
             second = b[i]
             break
    
+    
     for ar in a:
         if ar['age'] == second:
             print(ar)
